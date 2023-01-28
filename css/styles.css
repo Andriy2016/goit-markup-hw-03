@@ -15,6 +15,18 @@
     --white-cl: #fff;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+img { 
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: var(--primary-font);
     color: var(--dark-cl);
@@ -37,6 +49,8 @@ body {
 }
 
 .footer_logo {
+    margin-bottom: 16px;    
+
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
@@ -54,6 +68,7 @@ body {
 
 .header {
     color: var(--accent-cl);
+    border-bottom: 1px solid var(--accent-cl);
 }
 
 
@@ -93,13 +108,18 @@ body {
 }
 
 .hero_sct_title {
-    width: 500px;
+    margin-bottom: 48px;
+
+    width: 494px;
     font-size: 56px;
     line-height: 1.3;
     color: var(--white-cl);
 }
 
 .hero_sct_button {
+    width: 169px;
+    height: 56px;
+
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
@@ -123,10 +143,14 @@ body {
 }
 
 .feature_sct_item {
+    width: 264px;
+
     list-style-type: none;
 }
 
 .feature_sct_title {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
@@ -144,6 +168,8 @@ body {
 }
 
 .ourwork_sct_title {
+    margin-bottom: 72px;
+
     text-align: center;
     font-size: 36px;
     line-height: 1.3;
@@ -154,6 +180,8 @@ body {
 }
 
 .team_sct_title {
+    margin-bottom: 72px;
+
     text-align: center;
     font-size: 36px;
     line-height: 1.3;
@@ -166,6 +194,8 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 .team_sct_name {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
@@ -175,12 +205,20 @@ body {
     line-height: 1.3;
 }
 
+.team_sct_info {
+    padding: 32px 0;
+    text-align: center;
+    width: 232px;
+}
+
 /* Footer */
 .footer {
     background-color: var(--dark-cl);
 }
 
 .footer_txt {
+    width: 264px;
+
     font-size: 16px;
     line-height: 1.3;
     color: var(--accent-cl);
@@ -217,12 +255,17 @@ body {
 
 .main_sct_item_work {
     width: 360px;
-    height: 420px;
-    background: var(--white-cl);
+}
+
+.main_sct_item_info { 
+    padding: 32px 0 32px 16px;
     border: 1px solid var(--accent-cl);
+    border-top: none;
 }
 
 .main_sct_title {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.3;
@@ -233,3 +276,15 @@ body {
     line-height: 1.3;
     color: var(--txt-cl);
 }
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
