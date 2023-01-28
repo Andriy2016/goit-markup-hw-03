@@ -321,11 +321,6 @@ margin-right: auto;
     flex-direction: calc(100% - var(--indent) * (var(--items-1)-1)/var(--items)) ;
     margin-bottom: 120px;
 }
-
-.main_sct_item_work {
-    width: 360px;
-}
-
 .main_sct_item_info { 
     padding: 32px 0 32px 16px;
     border: 1px solid var(--accent-cl);
