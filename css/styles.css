@@ -16,7 +16,6 @@
 
     --indent: 24px;
     --indent_bottom: 48px;
-    --items: 3;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -33,6 +32,11 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+button{
+    padding: 0;
+}
+
 body {
     font-family: var(--primary-font);
     color: var(--dark-cl);
@@ -70,13 +74,16 @@ body {
 }
 
 .feature_sct,.ourwork_sct,.team_sct{
-    padding: 120px 0;
+    padding-bottom: 120px;
+}
+
+.feature_sct {
+    padding-top: 120px;
 }
 
 /* Header index */
 
 .header {
-    padding: 32px 0;
     color: var(--accent-cl);
     border-bottom: 1px solid var(--accent-cl);
 }
@@ -150,6 +157,8 @@ margin-right: auto;
     font-size: 56px;
     line-height: 1.3;
     color: var(--white-cl);
+
+    text-align: center;
 }
 
 .hero_sct_button {
@@ -187,9 +196,8 @@ margin-right: auto;
 }
 
 .feature_sct_item {
-    width: 264px;
-
     list-style-type: none;
+    flex-basis: calc((1128px - 3 * 24px)/ 4);
 }
 
 .feature_sct_title {
@@ -262,7 +270,6 @@ margin-right: auto;
 .team_sct_info {
     padding: 32px 0;
     text-align: center;
-    width: 232px;
 }
 
 /* Footer */
@@ -282,10 +289,9 @@ margin-right: auto;
 
 /* Portfolio */
 
-.main_sct_list_batton {
+.main_sct_list_button {
     list-style-type: none;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 
     display: flex;
     align-items: center;
@@ -301,6 +307,8 @@ margin-right: auto;
     letter-spacing: 0.04em;
     color: var(--primary-brand-cl);
 
+    height: 48px;
+    padding: 0 24px;
     border: 1px solid var(--accent-cl);
     border-radius: 4px;
     background-color: var(--light-cl);
@@ -318,8 +326,10 @@ margin-right: auto;
     display: flex;
     gap: var(--indent_bottom) var(--indent);
     flex-wrap: wrap;
-    flex-direction: calc(100% - var(--indent) * (var(--items-1)-1)/var(--items)) ;
-    margin-bottom: 120px;
+}
+
+.main_sct_item_work {
+    flex-basis: calc((1128px - 2 * 24px) / 3);
 }
 .main_sct_item_info { 
     padding: 32px 0 32px 16px;
@@ -349,3 +359,7 @@ margin-right: auto;
     margin-right: auto;
 }
 
+.portfolio_sct {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
